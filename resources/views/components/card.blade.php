@@ -10,7 +10,7 @@
                         
                         <div class="stars text-center">
                             @php
-                                $vote = ceil($movie->vote / 2 * 2) / 2; 
+                                $vote = round($movie->vote / 2 * 2) / 2; 
                                 $fullStars = floor($vote);
                                 $halfStars = ($vote - $fullStars) >= 0.5 ? 1 : 0;
                                 $emptyStars = 5 - ($fullStars + $halfStars);
