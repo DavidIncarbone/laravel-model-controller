@@ -2,16 +2,16 @@
 
 @extends("layouts.master")
 
-@section("titolo")
-
-Titolo della pagina
-
-@endsection
-
 
 @section("contenuto")
 
-<h1>Contenuto</h1>
+@foreach ($movies as $movie)
+
+@dd($movie["title"])
+
+
+
+@endforeach
 
     @endsection
 
