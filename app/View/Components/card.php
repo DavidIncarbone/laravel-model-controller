@@ -8,12 +8,10 @@ use Illuminate\View\Component;
 
 class card extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+ public $movie;
+    public function __construct($movie)
     {
-        //
+        $this->movie = $movie;
     }
 
     /**

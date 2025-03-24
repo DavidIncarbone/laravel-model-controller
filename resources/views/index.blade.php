@@ -5,13 +5,9 @@
 
 @section("contenuto")
 
-@foreach ($movies as $movie)
-
-@dd($movie["title"])
+@include("./partials/filmlist")
 
 
-
-@endforeach
 
     @endsection
 

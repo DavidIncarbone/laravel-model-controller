@@ -6,3 +6,85 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+/* Modalità scura: Stile per la card */
+.movie-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    /* Fondo scuro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover per la card */
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    /* Ombra chiara per contrasto */
+}
+
+/* Stile per l'immagine del film */
+.movie-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
+    /* Bordo più scuro */
+}
+
+/* Testo del titolo al centro */
+.movie-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    /* Titolo chiaro */
+    margin-bottom: 10px;
+}
+
+/* Testo della descrizione */
+.movie-card .card-text {
+    font-size: 0.9rem;
+    color: #ccc;
+    /* Testo più chiaro */
+    margin-bottom: 5px;
+}
+
+/* Sezione delle stelle */
+.stars {
+    margin-top: 10px;
+}
+
+.stars i {
+    color: #FFD700;
+    /* Oro per le stelle */
+    font-size: 1.1rem;
+}
+
+/* Card header */
+.card-body {
+    padding: 20px;
+}
+
+/* Layout della colonna */
+.row .col-md-4 {
+    padding: 15px;
+}
+
+/* Stile responsive */
+@media (max-width: 767px) {
+    .movie-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Modalità Dark globale (sfondo della pagina e testo generale) */
+body {
+    background-color: #121212;
+    /* Sfondo scuro */
+    color: #f0f0f0;
+    /* Testo chiaro */
+}
+
+.container {
+    color: #f0f0f0;
+    /* Colore del testo della pagina */
+}
